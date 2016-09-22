@@ -63,7 +63,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/main_styles.scss */
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.eot");
+  src: url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.woff") format("woff"), url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.ttf") format("truetype"), url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman") format("svg"), url("../resources/HelveticaNeueCyr/Roman/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.eot");
+  src: url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.woff") format("woff"), url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.ttf") format("truetype"), url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold") format("svg"), url("../resources/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 32, ../sass/main_styles.scss */
 body {
   font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
@@ -71,7 +85,7 @@ body {
   background: #fff;
 }
 
-/* line 33, ../sass/main_styles.scss */
+/* line 61, ../sass/main_styles.scss */
 .wrapper {
   max-width: 1010px;
   margin: 0 auto;
@@ -79,222 +93,481 @@ body {
   box-sizing: border-box;
 }
 
-/* line 39, ../sass/main_styles.scss */
+/* line 67, ../sass/main_styles.scss */
 a {
   text-decoration: none;
 }
 
-@media (max-width: 1023px) {
-  /* line 46, ../sass/main_styles.scss */
-  header {
-    max-height: 67px;
-    padding: 10px 0 9px;
-    background: #fff;
-    border-bottom: 3px solid #74023b;
+/* line 73, ../sass/main_styles.scss */
+.inside-page {
+  max-height: 67px;
+  padding: 10px 0 9px;
+  background: #fff;
+  border-bottom: 3px solid #74023b;
+}
+
+/* line 79, ../sass/main_styles.scss */
+.dropdovn-menu-mobile {
+  position: relative;
+}
+/* line 81, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu {
+  display: block;
+  position: absolute;
+  list-style: none;
+  padding: 55px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 217px;
+  background-color: #74023b;
+  box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
+  height: auto;
+  top: -15px;
+  left: -650px;
+  transition: left .2s;
+  z-index: 9;
+  -webkit-transform: classZ(0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 98, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu li {
+  display: block;
+  width: 100%;
+  height: 43px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 43px;
+  vertical-align: middle;
+}
+/* line 107, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: 26px;
+  color: #fff;
+  font: 400 18px/35px "Open Sans", sans-serif;
+  color: white;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 117, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu li a:hover {
+  color: #fff;
+  background: #bf0361;
+}
+/* line 122, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu li a.active {
+  color: #fff;
+  background: #bf0361;
+}
+/* line 128, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu .language-item a {
+  display: inline-block;
+  width: 28px;
+  height: 25px;
+  color: white;
+  font: 400 15px/20px "Open Sans", sans-serif;
+}
+/* line 134, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu .language-item a:first-of-type {
+  margin-left: 26px;
+  padding: 0;
+}
+/* line 138, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu .language-item a:nth-of-type(2) {
+  padding: 0 0 0 3px;
+}
+/* line 142, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu .language-item a.active-lenguage {
+  background: #bf0361;
+}
+/* line 145, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu .language-item span {
+  color: #fff;
+}
+/* line 150, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu-ticker {
+  display: none;
+}
+/* line 153, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .btn-menu {
+  color: #fff;
+  background-color: none;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 99;
+  width: 22px;
+  -webkit-transform: classZ(0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 166, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .btn-menu span {
+  display: block;
+  height: 2px;
+  background-color: #333;
+  margin: 3px 0 0;
+  transition: all .1s linear .23s;
+  border-radius: 10px;
+  position: relative;
+}
+/* line 175, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .btn-menu span.first {
+  margin-top: 0;
+}
+/* line 178, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+  top: 15px;
+  z-index: 99999;
+}
+/* line 183, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .btn-menu span {
+  background-color: #fff;
+}
+/* line 186, ../sass/main_styles.scss */
+.dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .hidden-menu {
+  left: -15px;
+  top: -25px;
+  overflow: hidden;
+  margin: 5px 0 0 0;
+  z-index: 9999;
+}
+
+/*dropdown phone*/
+/* line 196, ../sass/main_styles.scss */
+.call-us-block {
+  float: right;
+  margin: 0;
+  vertical-align: middle;
+}
+/* line 201, ../sass/main_styles.scss */
+.call-us-block img {
+  display: inline-block;
+  line-height: 33px;
+  vertical-align: middle;
+}
+
+/* line 207, ../sass/main_styles.scss */
+#info-mobile {
+  width: 230px;
+  height: auto;
+  background-color: #74023b;
+  box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
+  clear: none;
+  float: right;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 100;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 220, ../sass/main_styles.scss */
+#info-mobile a {
+  display: block;
+  margin: 6px auto 5px;
+  text-align: center;
+}
+/* line 224, ../sass/main_styles.scss */
+#info-mobile a .phone {
+  color: #fff;
+  font: 700 22px/35px "Open Sans", sans-serif;
+}
+
+/* line 230, ../sass/main_styles.scss */
+.call-us-block > label {
+  color: #000;
+  float: right;
+  margin: 5px 0 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+/* line 237, ../sass/main_styles.scss */
+input {
+  display: none;
+}
+
+/* line 238, ../sass/main_styles.scss */
+input:checked + #info-mobile {
+  display: none;
+}
+
+/*end dropdown phone*/
+/*end menu*/
+/* line 242, ../sass/main_styles.scss */
+.main-menu {
+  display: none;
+}
+
+/* line 1, ../sass/_login.scss */
+.login-bg {
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: url("../images/bage-bg.jpg");
+}
+
+/* line 31, ../sass/_login.scss */
+.wrapper {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+/* line 37, ../sass/_login.scss */
+input {
+  outline: none;
+}
+
+/* line 40, ../sass/_login.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 45, ../sass/_login.scss */
+.login-page {
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  max-height: 65px;
+  height: 65px;
+  background: url("../images/header-bg.jpg");
+  background-size: cover;
+  box-shadow: 0 3.5px 4px rgba(0, 0, 0, 0.2);
+}
+/* line 56, ../sass/_login.scss */
+.login-page .logo-block {
+  margin: 0 auto;
+  padding: 20px 0 0;
+  text-align: center;
+}
+/* line 61, ../sass/_login.scss */
+.login-page .logo-block .logo-title {
+  color: #fffa02;
+  font: 400 22px/18px "HelveticaNeueCyr", sans-serif;
+}
+/* line 66, ../sass/_login.scss */
+.login-page .logo-block .logo-sign {
+  color: white;
+  font: 400 13px/15px "HelveticaNeueCyr", sans-serif;
+}
+
+/* line 75, ../sass/_login.scss */
+.login-page-content .login-block {
+  max-width: 480px;
+  width: 100%;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: bounceIn;
+  -moz-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: linear;
+  animation-name: bounceIn;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+/* line 99, ../sass/_login.scss */
+.login-page-content .login-block #login-form {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 102, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row {
+  margin-bottom: 15px;
+}
+/* line 105, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row label {
+  display: block;
+  margin: 5px 0;
+  color: black;
+  font: 600 22px/29px "Open Sans", sans-serif;
+}
+/* line 112, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row #login,
+.login-page-content .login-block #login-form .form-row #password {
+  height: 33px;
+  padding-left: 10px;
+  border: 1px solid #56bff8;
+  background: inherit;
+  font: 400 20px/33px "Open Sans", sans-serif;
+}
+/* line 121, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row #login,
+.login-page-content .login-block #login-form .form-row #password,
+.login-page-content .login-block #login-form .form-row #sign-in {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 128, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .save-password-container {
+  overflow: hidden;
+}
+/* line 131, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .save-password-container label {
+  color: #009af0;
+  font: 600 18px/24px "Open Sans", sans-serif;
+  cursor: pointer;
+}
+/* line 137, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .save-password-container #save-password {
+  display: none;
+}
+/* line 140, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .save-password-container .checkbox-custom {
+  position: relative;
+  float: left;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 0 0;
+  background-color: #e1ebf4;
+  border: 1px solid #7fbef6;
+  cursor: pointer;
+  border-radius: 3px;
+}
+/* line 151, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .save-password-container #save-password:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: #413548;
+  border-radius: 2px;
+}
+/* line 164, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .forgot-password {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0 0 25px;
+  color: #009af0;
+  font: 600 18px/25px "Open Sans", sans-serif;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 172, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row .forgot-password:hover {
+  color: #565656;
+}
+/* line 176, ../sass/_login.scss */
+.login-page-content .login-block #login-form .form-row #sign-in {
+  float: right;
+  margin: 33px 0 0;
+  width: 113px;
+  height: 45px;
+  border: inherit;
+  color: white;
+  font: 600 18px/45px "Open Sans", sans-serif;
+  background-color: #4ec4fc;
+  cursor: pointer;
+}
+
+/* line 192, ../sass/_login.scss */
+.footer-login {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: dimgrey;
+  box-shadow: -2.1px 2.1px 4px rgba(0, 0, 0, 0.2);
+}
+/* line 200, ../sass/_login.scss */
+.footer-login .copyright {
+  margin: 0 auto;
+  padding: 8px 0 5px;
+  text-align: center;
+}
+/* line 205, ../sass/_login.scss */
+.footer-login .copyright h4 {
+  color: white;
+  font: 400 13px/29px "Open Sans", sans-serif;
+}
+/* line 208, ../sass/_login.scss */
+.footer-login .copyright h4 a {
+  color: #fff;
+}
+
+@media (min-width: 480px) {
+  /* line 219, ../sass/_login.scss */
+  .login-block #login-form .form-row .save-password-container {
+    float: left;
+    min-width: 185px;
   }
 
-  /* line 52, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile {
-    position: relative;
+  /* line 230, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row .forgot-password {
+    margin: 0 0 0 15px;
+    padding: 5px 0 0;
   }
-  /* line 54, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu {
-    display: block;
-    position: absolute;
-    list-style: none;
-    padding: 55px 0 0 0;
-    margin: 0;
-    box-sizing: border-box;
-    width: 217px;
-    background-color: #74023b;
-    box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
-    height: auto;
-    top: -15px;
-    left: -650px;
-    transition: left .2s;
-    z-index: 9;
-    -webkit-transform: classZ(0);
-    -webkit-backface-visibility: hidden;
+}
+@media (min-width: 560px) {
+  /* line 242, ../sass/_login.scss */
+  .login-page .logo-block {
+    float: left;
   }
-  /* line 71, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu li {
-    display: block;
-    width: 100%;
-    height: 43px;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 43px;
-    vertical-align: middle;
-  }
-  /* line 80, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding-left: 26px;
-    color: #fff;
-    font: 400 18px/35px "Open Sans", sans-serif;
-    color: white;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  /* line 90, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu li a:hover {
-    color: #fff;
-    background: #bf0361;
-  }
-  /* line 95, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu li a.active {
-    color: #fff;
-    background: #bf0361;
-  }
-  /* line 101, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu .language-item a {
-    display: inline-block;
-    width: 28px;
-    height: 25px;
-    color: white;
-    font: 400 15px/20px "Open Sans", sans-serif;
-  }
-  /* line 107, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu .language-item a:first-of-type {
-    margin-left: 26px;
-    padding: 0;
-  }
-  /* line 111, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu .language-item a:nth-of-type(2) {
-    padding: 0 0 0 3px;
-  }
-  /* line 115, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu .language-item a.active-lenguage {
-    background: #bf0361;
-  }
-  /* line 118, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu .language-item span {
-    color: #fff;
-  }
-  /* line 123, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu-ticker {
-    display: none;
-  }
-  /* line 126, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .btn-menu {
-    color: #fff;
-    background-color: none;
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    cursor: pointer;
-    transition: left .23s;
-    z-index: 99;
-    width: 22px;
-    -webkit-transform: classZ(0);
-    -webkit-backface-visibility: hidden;
-  }
-  /* line 139, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .btn-menu span {
-    display: block;
-    height: 2px;
-    background-color: #333;
-    margin: 3px 0 0;
-    transition: all .1s linear .23s;
-    border-radius: 10px;
-    position: relative;
-  }
-  /* line 148, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .btn-menu span.first {
-    margin-top: 0;
-  }
-  /* line 151, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .btn-menu {
-    left: 160px;
-    top: 15px;
-    z-index: 99999;
-  }
-  /* line 156, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .btn-menu span {
-    background-color: #fff;
-  }
-  /* line 159, ../sass/main_styles.scss */
-  .dropdovn-menu-mobile .hidden-menu-ticker:checked ~ .hidden-menu {
-    left: -15px;
-    top: -25px;
-    overflow: hidden;
+
+  /* line 251, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row .save-password-container {
+    min-width: 150px;
     margin: 5px 0 0 0;
-    z-index: 9999;
   }
-
-  /*dropdown phone*/
-  /* line 169, ../sass/main_styles.scss */
-  .call-us-block {
-    float: right;
+  /* line 255, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row .save-password-container .checkbox-custom {
+    width: 16px;
+    height: 16px;
+    margin: 2px 10px 0 0;
+  }
+  /* line 261, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row .save-password-container label {
+    font: 600 14px/24px "Open Sans", sans-serif;
+  }
+  /* line 271, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row .forgot-password {
+    float: left;
+    margin: 5px 0 0 15px;
+    font: 600 14px/25px "Open Sans", sans-serif;
+  }
+  /* line 276, ../sass/_login.scss */
+  .login-page-content .login-block #login-form .form-row #sign-in {
     margin: 0;
-    vertical-align: middle;
-  }
-  /* line 174, ../sass/main_styles.scss */
-  .call-us-block img {
-    display: inline-block;
-    line-height: 33px;
-    vertical-align: middle;
-  }
-
-  /* line 180, ../sass/main_styles.scss */
-  #info-mobile {
-    width: 230px;
-    height: auto;
-    background-color: #74023b;
-    box-shadow: 2.4px 4.4px 7px rgba(0, 1, 1, 0.26);
-    clear: none;
-    float: right;
-    position: absolute;
-    top: 64px;
-    right: 0;
-    z-index: 100;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-  /* line 193, ../sass/main_styles.scss */
-  #info-mobile a {
-    display: block;
-    margin: 6px auto 5px;
-    text-align: center;
-  }
-  /* line 197, ../sass/main_styles.scss */
-  #info-mobile a .phone {
-    color: #fff;
-    font: 700 22px/35px "Open Sans", sans-serif;
-  }
-
-  /* line 203, ../sass/main_styles.scss */
-  .call-us-block > label {
-    color: #000;
-    float: right;
-    margin: 5px 0 0;
-    cursor: pointer;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-  }
-
-  /* line 210, ../sass/main_styles.scss */
-  input {
-    display: none;
-  }
-
-  /* line 211, ../sass/main_styles.scss */
-  input:checked + #info-mobile {
-    display: none;
-  }
-
-  /*end dropdown phone*/
-  /*end menu*/
-  /* line 215, ../sass/main_styles.scss */
-  .main-menu {
-    display: none;
   }
 }
