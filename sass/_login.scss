@@ -60,11 +60,19 @@ a {
 		.logo-title {
 			color: #fffa02;
 			font: 400 22px / 18px $HelveticaNeueCyr;
+
+			a {
+				color: #fffa02;
+			}
 		}
 
 		.logo-sign {
 			color: white;
 			font: 400 13px / 15px $HelveticaNeueCyr;
+
+			a {
+				color: white;
+			}
 		}
 	}
 }

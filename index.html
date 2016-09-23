@@ -2,20 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Title</title>
-	<meta name="keywords" content="">
+	<title>Content Management System iBusinessCard 2.0</title>
+	<meta name="keywords" content="Content Management System iBusinessCard 2.0">
 
 	<link rel="shortcut icon" href="images/favicon.ico" >
-	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic" rel="stylesheet">
 	<!-- Include media queries -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/mack_os_dock_menu.css">
 	<link rel="stylesheet" href="stylesheets/main_styles.css">
 </head>
-<body>
+<body class="body-background">
 	<header class="inside-page">
 		<div class="header-top">
 			<div class="wrapper">
@@ -29,74 +30,128 @@
 					</label>
 					<ul class="hidden-menu">
 						<li>
-							<a href="index.html">Главная</a>
+							<a href="index.html">Home</a>
 						</li>
 						<li>
-						<a href="">Title</a>
-					</li>
-					<li>
-						<a href="">Title</a>
-					</li>
-					<li>
-						<a href="">Title</a>
-					</li>
+							<a href="#">about us</a>
+						</li>
+						<li>
+							<a href="#">services</a>
+						</li>
+						<li>
+							<a href="#">blog</a>
+						</li>
+						<li>
+							<a href="#">contact us</a>
+						</li>
 					</ul>
-				</div>
-				<div class="call-us-block">
-					<label for="hider">
-						<img src="images/icon-phone.png" alt="icon-phone">
-					</label>
-					<input type="checkbox" checked="no" id="hider">
-					<div id="info-mobile" class="header-info-mobile">
-						<a href="tel:+1 (123) 456-7890">
-							<span class="phone">+1 (123) 456-7890</span>
-						</a>
-					</div>
 				</div>
 				<!-- end- mobile menu -->
-				<!-- <div class="lenguage-block">
-					<h1 class="logo">
-						<a href="index.html">
-							<img src="images/logo.png" alt="Russevent">
-						</a>
-					</h1>
-					<ul id="lenguage-list">
+				<div class="settings-block">
+					<a id="settings" href="#">
+						<span class="fa fa-cog" aria-hidden="true"></span>
+						<span class="position-word">Settings</span>
+					</a>
+					<a id="log-out" href="#">
+						<span class="fa fa-sign-out" aria-hidden="true"></span>
+						<span class="position-word">Sign&nbsp;out</span>
+					</a>
+				</div>
+				<div id="sett" class="open-settings" style="display: none;">
+					<ul class="settings-list">
 						<li>
-							<a href="#">Eng</a>
+							<a href="#">Change Password</a>
 						</li>
 						<li>
-							<a href="#">Рус</a>
+							<a href="#">Change E-mail</a>
+						</li>
+						<li>
+							<a href="#">License</a>
+						</li>
+						<li>
+							<a href="#">Help</a>
 						</li>
 					</ul>
-				</div> -->
-			</div>
-		</div>
-		<div class="main-menu">
-			<div class="wrapper">
-				<ul class="list-menu">
-					<li>
-						<a href="index.html">Главная</a>
-					</li>
-					<li>
-						<a href="">Title</a>
-					</li>
-					<li>
-						<a href="">Title</a>
-					</li>
-					<li>
-						<a href="">Title</a>
-					</li>
-				</ul>
+				</div>
+				<div class="logo-block">
+					<h1 class="logo-title">
+						<a href="#">iBusinessCard 2.0</a>
+					</h1>
+					<h2 class="logo-sign">
+						<a href="#">Content Management System</a>
+					</h2>
+				</div>
 			</div>
 		</div>
 	</header>
-	<section class="site-container">
+	<section class="site-container main-page">
 		<div class="wrapper">
-			
+			<div class="welcome">
+				<div class="introo">
+					<h2 class="welcome-title">
+						<span class="uppercase-text">Welcome</span> to
+						<span class="second-title">iBusinessCard 2.0 </span>
+						<span class="thirdContent-title"><span class="space">Content</span> Management System</span>
+					</h2>
+					<h3 class="choose-title">
+						<span>Please choose</span> 
+						<span>section down,</span>
+						<span>which one you </span>
+						<span>want edit.</span>
+					</h3>
+				</div>
+				<div class="position-img">
+					<img class="mobile-photo" src="images/position-img.png" alt="The man who been could do whatever">
+					<img class="desctop-photo" src="images/position-img_desctop.png" alt="The man who been could do whatever">
+				</div>
+			</div>
+			<div class="main-menu">
+				<ul class="list-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#">about us</a>
+					</li>
+					<li>
+						<a href="#">services</a>
+					</li>
+					<li>
+						<a href="#">blog</a>
+					</li>
+					<li>
+						<a href="#">contact us</a>
+					</li>
+				</ul>
+			</div>
+			<div id="dock-container">
+				<div id="dock">
+					<ul>
+						<li>
+							<a href="@"><img src="images/home.png" alt="home item"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/about-us.png" alt="about item"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/services.png" alt="services item"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/blog.png" alt="blog item"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/contact-us.png" alt="contact-us item"></a>
+						</li>
+					</ul>
+					<!-- <div class="base"></div> -->
+				</div>
+			</div>
 		</div>
 	</section>
+	<footer class="site-container footer-inside"></footer>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/mack_os_dock_live_menu.js"></script>
 	<script src="js/swiper.js"></script>
 	<script src="js/main.js"></script>
-	</body>
-	</html>
+</body>
+</html>

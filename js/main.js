@@ -10,6 +10,14 @@ $(function () {
     });
 });
 
+/*---------------------*/
+/*SETTINGS CLICK*/
+/*---------------------*/
+$("#settings").click(function() {
+  $(this).find("span").toggleClass('active-setting');
+  $("#sett").toggleClass("show");
+});
+
 // mobile slider
 // var swiper_main = new Swiper('.swiper-container-bilet-more-mobile', {
 //     paginationClickable: true,
