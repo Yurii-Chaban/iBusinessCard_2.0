@@ -69,6 +69,24 @@ $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
+@mixin direction {
+  @include site-container;
+  padding: 10px 0 11px;
+  background-color: #d5dde1;
+  .arrow-back {
+    float: left;
+  }
+  .direction-title {
+    margin: 0 auto;
+    text-align: center;
+    a {
+      color: #069df1;
+			font: 400 18px / 25px #OpenSans;
+			text-transform: uppercase;
+      text-transform: uppercase;
+    }
+  }
+}
 .wrapper {
 	max-width: 1010px;
 	margin: 0 auto;
@@ -79,12 +97,17 @@ $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
 a {
 	text-decoration: none;
 }
+.direction {
+  @include direction;
+}
 // FOR LOGIN PAGE
 @import "login.scss";
 // FOR HEADER ONLY
 @import "header.scss";
 //FOR MAIN PAGE
 @import "main.scss";
+//FOR HOME PAGE
+@import "home.scss";
 //FOR FOOTER ONLY
 @import "footer.scss";
 //MEDIA QUERIES

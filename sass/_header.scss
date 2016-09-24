@@ -88,6 +88,11 @@
 		background-color: #e7f2f6;
 		box-shadow: -3.5px 3.5px 5px rgba(0, 0, 0, 0.14);
 	}
+	@media (min-width: 1000px) {
+		.hidden-menu-ticker:checked ~ .hidden-menu {
+			left: -22px;
+		}
+	}
 }
 
 input{display:none;}
@@ -184,7 +189,8 @@ input:checked+#info-mobile{display:none;}
 				@include transition;
 
 				&:hover {
-					background: #fffa3b;
+					color: #fffa3b;
+					background-color: #61abec;
 				}
 			}
 		}

@@ -18,16 +18,19 @@ $("#settings").click(function() {
   $("#sett").toggleClass("show");
 });
 
-// mobile slider
-// var swiper_main = new Swiper('.swiper-container-bilet-more-mobile', {
-//     paginationClickable: true,
-//     loop: true,
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     simulateTouch: true,
-//     centeredSlides: true,
-//     autoplay: 3500,
-//     speed: 1000,
-//     watchSlidesProgress: true,
-//     autoplayDisableOnInteraction: false
-// });
+// for slider in Home page
+var swiper_main = new Swiper('.swiper-container-home-page', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    simulateTouch: true,
+    centeredSlides: true,
+    autoplay: 3500,
+    speed: 1000,
+    watchSlidesProgress: true,
+    autoplayDisableOnInteraction: false
+});
