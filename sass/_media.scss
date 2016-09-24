@@ -108,6 +108,11 @@
 	}
 
 	.for-blog {
+		background: inherit;
+
+		.blog-bg {
+			background-color: #c9d4d9;
+		}
 		.blog-list {
 			display: -webkit-box;
 			display: -moz-box;
@@ -165,11 +170,12 @@
 	.to-website-btn {
 		width: 185px;
 		float: left;
-		margin-left: 38%;
+    margin: 0 0 0 38%;
 	}
 	.back-btn {
 		width: 80px;
 		float: right;
+    margin: 0;
 	}
 }
 @media (min-width: 1024px) {
