@@ -1433,24 +1433,28 @@ input:checked + #info-mobile {
 }
 
 /* line 2, ../sass/_footer.scss */
+.footer-main,
 .footer-inside {
   width: 100%;
   min-height: 14px;
   background-color: dimgrey;
   box-shadow: -2.1px 2.1px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 8, ../sass/_footer.scss */
+/* line 9, ../sass/_footer.scss */
+.footer-main .copyright,
 .footer-inside .copyright {
   margin: 0 auto;
   padding: 8px 0 5px;
   text-align: center;
 }
-/* line 13, ../sass/_footer.scss */
+/* line 14, ../sass/_footer.scss */
+.footer-main .copyright h4,
 .footer-inside .copyright h4 {
   color: white;
   font: 400 13px/29px "Open Sans", sans-serif;
 }
-/* line 16, ../sass/_footer.scss */
+/* line 17, ../sass/_footer.scss */
+.footer-main .copyright h4 a,
 .footer-inside .copyright h4 a {
   color: #fff;
 }
@@ -1813,7 +1817,7 @@ input:checked + #info-mobile {
   }
 
   /* line 344, ../sass/_media.scss */
-  .footer-inside {
+  .footer-main {
     position: fixed;
     left: 0;
     bottom: 0;

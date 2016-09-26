@@ -9,6 +9,19 @@ $(function () {
         }
     });
 });
+// for osx menu
+$(function () {
+    $('ul.osx-dock li a').each(function () {
+        var location = window.location.pathname;
+        var link = this.pathname;
+        var result = location.match(link);
+        if(result && link.length > 0) {
+            $(this).parent().addClass('osx-menu-active');
+            $(this).parent().prev().addClass("nearby");
+            $(this).parent().next().addClass("nearby");
+        }
+    });
+});
 
 /*---------------------*/
 /*SETTINGS CLICK*/
