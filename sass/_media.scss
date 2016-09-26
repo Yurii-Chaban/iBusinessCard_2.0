@@ -1,3 +1,12 @@
+@media (max-width: 319px) {
+	.for-slider {
+		.slider-title, 
+		.slider-description {
+			left: 45%;
+			transform: translateX(-49%);
+		}
+	}
+}
 @media (min-width: 768px) {
 
 	.for-logo {
@@ -167,16 +176,109 @@
 			}
 		}
 	}
-	.to-website-btn {
-		width: 185px;
-		float: left;
-    margin: 0 0 0 38%;
+	.site-control-btn {
+		overflow: hidden;
+		.to-website-btn {
+			width: 185px;
+			float: left;
+			margin: 0 0 0 38%;
+		}
+		.back-btn {
+			width: 80px;
+			float: right;
+			margin: 0;
+		}
 	}
-	.back-btn {
-		width: 80px;
-		float: right;
-    margin: 0;
+
+	// FOR ABOUT US PAGE
+	.main-page {
+		.fot-page-title {
+			.page-title {
+				background-color: inherit;
+
+				.title {
+					float: left;
+					a {
+						color: #61abec;
+					}
+				}
+				.edit-title {
+					float: left;
+					clear: inherit;
+					margin: 10px 0 0 20px;
+					a {
+						color: #61abec;
+					}
+				}
+			}
+		}
+		.for-about {
+			overflow: hidden;
+			.about-photo-container {
+				width: 282px;
+				height: 215px;
+				float: left;
+				margin: 0 20px 20px 0;
+				background-position: center;
+
+				img {
+					width: 100%;
+				}
+
+				.edit-title {
+					top: 11px;
+					right: 40px;
+					transform: inherit;
+				}
+			}
+
+			.about-description {
+				min-height: 361px;
+				margin: 0 auto 21px;
+				overflow: initial;
+
+				.description {
+					a {
+						span {
+							display: inline;
+						}
+					}
+				}
+			}
+		}
+		.for-about-photo {
+			overflow: hidden;
+			.photo-container {
+				float: left;
+				width: 187px;
+				height: 141px;
+				margin: 6px;
+				background-position: center;
+
+				img {
+					width: 100%;
+				}
+
+				.edit-title {
+					top: 11px;
+					right: 10px;
+					transform: inherit;
+				}
+			}
+		}
+		.for-video-wrapper {
+			margin: 30px auto;
+			.video-container {
+				background-position: center;
+				.edit-title {
+					top: 11px;
+					right: 11px;
+					transform: inherit;
+				}
+			}
+		}
 	}
+
 }
 @media (min-width: 1024px) {
 

@@ -1,11 +1,11 @@
 // for main menu
 $(function () {
-    $('.list-menu li a').each(function () {
+    $('.hidden-menu li a').each(function () {
         var location = window.location.pathname;
         var link = this.pathname;
         var result = location.match(link);
         if(result && link.length > 0) {
-            $(this).addClass('list-menu-active');
+            $(this).addClass('hidden-menu-active');
         }
     });
 });

@@ -70,23 +70,75 @@ $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
 	box-sizing: border-box;
 }
 @mixin direction {
-  @include site-container;
-  padding: 10px 0 11px;
-  background-color: #d5dde1;
-  .arrow-back {
-    float: left;
-  }
-  .direction-title {
-    margin: 0 auto;
-    text-align: center;
-    a {
-      color: #069df1;
+	@include site-container;
+	padding: 10px 0 11px;
+	background-color: #d5dde1;
+	.arrow-back {
+		float: left;
+	}
+	.direction-title {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			color: #069df1;
 			font: 400 18px / 25px #OpenSans;
 			text-transform: uppercase;
-      text-transform: uppercase;
-    }
-  }
+			text-transform: uppercase;
+		}
+	}
 }
+@mixin big-title {
+	float: left;
+	color: white;
+	font: 700 30px / 35px $OpenSans;
+	text-transform: uppercase;
+}
+
+@mixin edit {
+	overflow: hidden;
+	margin: 10px 0 0;
+	clear: both;
+
+	a {
+		display: block;
+		float: right;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+		font: 400 18px / 18px $OpenSans;
+		@include transition;
+		
+		&:hover {
+			color: #535353;
+		}
+	}
+}
+
+
+.main-page {
+	.fot-page-title {
+		@include border-box;
+		.page-title {
+			@include border-box;
+			overflow: hidden;
+			width: 100%;
+			padding: 15px 10px;
+			background-color: #4ec4fc;
+
+			.title {
+				a {
+					color: white;
+					font: 700 30px / 35px $OpenSans;
+					text-transform: uppercase;
+				}
+			}
+			.edit-title {
+				@include edit;
+			}
+		}
+	}
+}
+
 .wrapper {
 	max-width: 1010px;
 	margin: 0 auto;
@@ -98,7 +150,7 @@ a {
 	text-decoration: none;
 }
 .direction {
-  @include direction;
+	@include direction;
 }
 // FOR LOGIN PAGE
 @import "login.scss";
@@ -108,6 +160,8 @@ a {
 @import "main.scss";
 //FOR HOME PAGE
 @import "home.scss";
+//FOR ABOUT US PAGE
+@import "about.scss";
 //FOR FOOTER ONLY
 @import "footer.scss";
 //MEDIA QUERIES

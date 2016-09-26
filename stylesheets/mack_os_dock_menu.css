@@ -83,6 +83,7 @@
 			-moz-transform-origin: 50% 100%;
 			-o-transition: all 0.3s;
 			-o-transform-origin: 50% 100%;
+			box-shadow: -2.1px 2.1px 10px rgba(0, 0, 0, 0.55);
 		}
 		#dock li:hover img { 
 			width: 88px;
@@ -204,6 +205,7 @@
 			-moz-transform-origin: 50% 100%;
 			-o-transition: all 0.3s;
 			-o-transform-origin: 50% 100%;
+			box-shadow: -2.1px 2.1px 10px rgba(0, 0, 0, 0.55);
 		}
 		#main-page-menu #dock li:hover img { 
 			width: 88px;
