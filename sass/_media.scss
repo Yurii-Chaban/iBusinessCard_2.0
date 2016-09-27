@@ -155,6 +155,7 @@
 	}
 	.for-seo-toolbar {
 		background: inherit;
+		clear: both;
 		.box-border {
 			padding: 31px 0 38px;
 			border: 2px solid #7fbef6;
@@ -189,7 +190,7 @@
 			margin: 0;
 		}
 	}
-
+	/*-------------------------------------------------------------------------------*/
 	// FOR ABOUT US PAGE
 	.main-page {
 		.fot-page-title {
@@ -217,6 +218,7 @@
 
 			.about-border {
 				position: relative;
+				min-height: 361px;
 
 				&:before {
 					position: absolute;
@@ -337,6 +339,84 @@
 			}
 		}
 	}
+	/*-------------------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------------------*/
+// FOR SERVICES PAGE
+
+.main-page {
+	.content-box {
+		overflow: hidden;
+		.left-sidebar {
+			float: left;
+			width: 23%;
+
+			.services-list {
+				margin: 15px auto 20px;
+				li {
+
+					&:first-child {
+						margin-top: 0;
+					}
+					.services-edit {
+						background: inherit;
+						padding: 0;
+						.title {
+							a {
+								color: #61abec;
+							}
+						}
+						.edit-title {
+							a {
+								color: #61abec;
+							}
+						}
+					}
+				}
+			}
+		}
+		.main-content {
+			float: right;
+			width: 71%;
+
+			.for-services-photo {
+				.photo-container {
+					min-height: 178px;
+					background: #d5dde1 url(../images/big-bg-elem.png) no-repeat;
+					background-position: center;
+					.edit-title {
+						top: 15px;
+						right: 20px;
+						transform: inherit;
+						a {
+							line-height: 25px;
+							.breack {
+								display: inline;
+							}
+						}
+					}
+				}
+			}
+			.services-area-description {
+				min-height: 175px;
+
+				.description {
+					a {
+						span {
+							display: inline;
+						}
+					}
+				}
+				.edit-title {
+					position: absolute;
+					top: 25px;
+					right: 13px;
+					transform: inherit;
+				}
+			}
+		}
+	}
+}
+/*-------------------------------------------------------------------------------*/
 
 }
 @media (min-width: 1024px) {

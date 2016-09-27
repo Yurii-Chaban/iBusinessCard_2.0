@@ -47,3 +47,11 @@ var swiper_main = new Swiper('.swiper-container-home-page', {
     watchSlidesProgress: true,
     autoplayDisableOnInteraction: false
 });
+// FOR SERVICES PAGE
+// when click on button add item
+$(document).ready(function(){
+    var str = '<li><div class="services-edit"><h3 class="title"><a href="#">Service name # item</a></h3><h3 class="edit-title"><a href="#">Edit<span class="fa fa-pencil" aria-hidden="true"></span></a></h3></div></li>';
+    $("#add").click(function(){
+        $(".services-list").append(str); 
+    });
+});
