@@ -48,6 +48,7 @@ body {
 
 $OpenSans: 'Open Sans', sans-serif;
 $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
+$Roboto: 'Roboto', sans-serif;
 
 @mixin site-container {
 	position: relative;
@@ -68,6 +69,25 @@ $HelveticaNeueCyr: 'HelveticaNeueCyr', sans-serif;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+}
+@mixin site-pagination {
+	.pagination-list {
+		@include border-box;
+		width: 100%;
+		margin: 34px auto 31px;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 3px;
+
+			a {
+				color: #535353;
+				font: 700 16px / 24px $Roboto;
+				text-transform: uppercase;
+			}
+		}
+	}
 }
 @mixin direction {
 	@include site-container;
@@ -166,6 +186,8 @@ a {
 @import "services.scss";
 //FOR SERVECES_MORE PAGE
 @import "services_more.scss";
+//FOR BLOG PAGE
+@import "blog.scss";
 //FOR FOOTER ONLY
 @import "footer.scss";
 //MEDIA QUERIES

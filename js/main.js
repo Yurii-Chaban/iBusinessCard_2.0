@@ -55,3 +55,11 @@ $(document).ready(function(){
         $(".services-list").append(str); 
     });
 });
+// FOR BLOG PAGE
+// when click on button add item
+$(document).ready(function(){
+    var addArticle = '<li><div class="article-edit"><h3 class="title"><a href="#">name of article # item</a></h3><h4 class="article-post-date">00/00/0000</h4></div><div class="blog-photo-container"><a href="#"></a></div><div class="overflow-block"><div class="article-edit-desctop"><h3 class="title"><a href="#">name of article # item</a></h3><h4 class="article-post-date">00/00/0000</h4></div><div class="blog-short-description"><h3 class="description"><a href="#"><span>Short</span> description...</a></h3><h3 class="edit-title"><a href="#"><span class="wrap-word">Edit page</span> of article # item<span class="fa fa-pencil" aria-hidden="true"></span></a></h3></div></div></li>';
+    $("#add_article").click(function(){
+        $(".articles-list").append(addArticle); 
+    });
+});
