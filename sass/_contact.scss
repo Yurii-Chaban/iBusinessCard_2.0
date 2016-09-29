@@ -110,6 +110,7 @@
 				overflow: hidden;
 				color: #09e;
 				font: 400 18px / 20px $HelveticaNeueCyr;
+				// @include transition;
 
 				span {
 					float: left;
@@ -119,6 +120,10 @@
 				img {
 					float: right;
 				}
+
+				// &:hover {
+				// 	color: #535353;
+				// }
 			}
 			}.map-overflow {
 				position: absolute;
