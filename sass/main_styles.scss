@@ -134,6 +134,20 @@ $Roboto: 'Roboto', sans-serif;
 	}
 }
 
+@mixin mapWrapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+	iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+	}
+}
+
 
 .main-page {
 	.fot-page-title {
@@ -190,6 +204,8 @@ a {
 @import "blog.scss";
 //FOR BLOG_MORE PAGE
 @import "blog_more.scss";
+//FOR CONTACT US PAGE
+@import "contact.scss";
 //FOR FOOTER ONLY
 @import "footer.scss";
 //MEDIA QUERIES

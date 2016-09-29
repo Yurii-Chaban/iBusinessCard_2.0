@@ -63,11 +63,11 @@
 	}
 	#dock li:hover span {
 		display: block;
-		bottom: 180px;
+		bottom: 165px;
 	}
 	#dock .osx-menu-active span {
 		display: block;
-		bottom: 180px;
+		bottom: 165px;
 	}
 	#dock li img {
 		width: 110px;
