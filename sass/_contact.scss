@@ -10,6 +10,7 @@
 
 			.title {
 				float: left;
+				max-width: 72%;
 				color: white;
 				font: 700 20px / 29px $OpenSans;
 				text-transform: uppercase;
@@ -21,6 +22,9 @@
 
 			.edit-title {
 				@include edit;
+				overflow: inherit;
+				float: right;
+				clear: inherit;
 				margin: 7px 0 0;
 			}
 		}
@@ -34,6 +38,7 @@
 
 			.title {
 				float: left;
+				max-width: 72%;
 				color: white;
 				font: 400 30px / 29px $OpenSans;
 				text-transform: uppercase;
@@ -45,6 +50,9 @@
 
 			.edit-title {
 				@include edit;
+				overflow: inherit;
+				float: right;
+				clear: inherit;
 				margin: 7px 0 0;
 			}
 		}
@@ -155,6 +163,7 @@
 
 				.title {
 					float: left;
+					max-width: 72%;
 					color: white;
 					font: 400 30px / 29px $OpenSans;
 					text-transform: uppercase;
@@ -166,6 +175,9 @@
 
 				.edit-title {
 					@include edit;
+					overflow: inherit;
+					float: right;
+					clear: inherit;
 					margin: 7px 0 0;
 				}
 			}

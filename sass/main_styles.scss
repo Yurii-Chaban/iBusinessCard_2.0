@@ -160,6 +160,8 @@ $Roboto: 'Roboto', sans-serif;
 			background-color: #4ec4fc;
 
 			.title {
+				float: left;
+				max-width: 72%;
 				a {
 					color: white;
 					font: 700 30px / 35px $OpenSans;
@@ -168,6 +170,9 @@ $Roboto: 'Roboto', sans-serif;
 			}
 			.edit-title {
 				@include edit;
+				overflow: inherit;
+				clear: inherit;
+				float: right;
 			}
 		}
 	}

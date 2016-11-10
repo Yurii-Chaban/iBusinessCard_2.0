@@ -157,6 +157,10 @@
 
         .edit-title {
             @include edit;
+            overflow: inherit;
+            margin: 10px 0 0;
+            clear: inherit;
+            float: right;
         }
     }
     .slider-title {
@@ -164,6 +168,7 @@
 
         .title {
             @include big-title;
+            max-width: 72%;
         }
     }
     .slider-description {
@@ -171,6 +176,7 @@
 
         .description {
             float: left;
+            max-width: 72%;
             color: white;
             font: 600 18px / 35px $OpenSans;
         }
@@ -207,6 +213,7 @@
         border: 2px solid #56bff8;
         .description {
             float: left;
+            max-width: 72%;
             color: #7d7d7d;
             font: 400 18px / 22px $HelveticaNeueCyr;
 
@@ -220,6 +227,10 @@
         }
 
         .edit-title {
+            overflow: inherit;
+            margin: 10px 0 0;
+            clear: inherit;
+            float: right;
             a {
                 color: #009af0;
 
@@ -305,6 +316,8 @@
 
                 .title {
                     float: left;
+                    max-width: 72%;
+                    height: auto;
                     color: white;
                     font: 400 22px / 29px $OpenSans;
 
@@ -315,6 +328,9 @@
 
                 .edit-title {
                     @include edit;
+                    overflow: inherit;
+                    float: right;
+                    clear: inherit;
                     margin: 7px 0 0;
                 }
             }
@@ -377,6 +393,7 @@
 
                 .title {
                     float: left;
+                    max-width: 72%;
                     color: white;
                     font: 400 20px / 22px $OpenSans;
                     text-transform: uppercase;
@@ -388,6 +405,9 @@
 
                 .edit-title {
                     @include edit;
+                    overflow: inherit;
+                    float: right;
+                    clear: inherit;
                     margin: 4px 0 0;
                 }
             }

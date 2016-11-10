@@ -16,6 +16,7 @@
 
                         .title {
                             float: left;
+                            max-width: 69%;
                             color: white;
                             font: 400 22px / 29px $OpenSans;
 
@@ -26,6 +27,9 @@
 
                         .edit-title {
                             @include edit;
+                            overflow: inherit;
+                            clear: inherit;
+                            float: right;
                             margin: 7px 0 0;
                         }
                     }
